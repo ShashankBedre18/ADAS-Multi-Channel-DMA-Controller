@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 415" width="1000" height="415" font-family="Segoe UI, Arial, sans-serif"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs><rect width="1000" height="415" fill="#ffffff"/>
+<text x="500.0" y="26" font-size="17" font-weight="700" text-anchor="middle" fill="#1f2937">Arbitration example - grant given at each burst boundary</text>
+<text x="30" y="64" font-size="13.5" font-weight="700" text-anchor="start" fill="#1f2937">Different priorities (radar 3, LiDAR 2, camera 1, diag 0): strict priority order</text>
+<text x="268" y="84" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 1</text>
+<text x="340" y="84" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 2</text>
+<text x="412" y="84" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 3</text>
+<text x="484" y="84" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 4</text>
+<text x="556" y="84" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 5</text>
+<text x="628" y="84" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 6</text>
+<text x="700" y="84" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 7</text>
+<text x="772" y="84" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 8</text>
+<text x="844" y="84" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 9</text>
+<text x="916" y="84" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 10</text>
+<text x="30" y="110" font-size="12" font-weight="400" text-anchor="start" fill="#1f2937">CH0 camera (P1)</text>
+<rect x="237" y="94" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="309" y="94" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="381" y="94" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="453" y="94" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="525" y="94" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="597" y="94" width="66" height="24" rx="4" fill="#c05621" />
+<text x="630" y="111" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<rect x="669" y="94" width="66" height="24" rx="4" fill="#c05621" />
+<text x="702" y="111" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<rect x="741" y="94" width="66" height="24" rx="4" fill="#c05621" />
+<text x="774" y="111" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<rect x="813" y="94" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="885" y="94" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<text x="30" y="140" font-size="12" font-weight="400" text-anchor="start" fill="#1f2937">CH1 radar (P3)</text>
+<rect x="237" y="124" width="66" height="24" rx="4" fill="#c53030" />
+<text x="270" y="141" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<rect x="309" y="124" width="66" height="24" rx="4" fill="#c53030" />
+<text x="342" y="141" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<rect x="381" y="124" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="453" y="124" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="525" y="124" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="597" y="124" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="669" y="124" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="741" y="124" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="813" y="124" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="885" y="124" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<text x="30" y="170" font-size="12" font-weight="400" text-anchor="start" fill="#1f2937">CH2 LiDAR (P2)</text>
+<rect x="237" y="154" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="309" y="154" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="381" y="154" width="66" height="24" rx="4" fill="#2c7a7b" />
+<text x="414" y="171" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<rect x="453" y="154" width="66" height="24" rx="4" fill="#2c7a7b" />
+<text x="486" y="171" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<rect x="525" y="154" width="66" height="24" rx="4" fill="#2c7a7b" />
+<text x="558" y="171" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<rect x="597" y="154" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="669" y="154" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="741" y="154" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="813" y="154" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="885" y="154" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<text x="30" y="200" font-size="12" font-weight="400" text-anchor="start" fill="#1f2937">CH3 diag (P0)</text>
+<rect x="237" y="184" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="309" y="184" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="381" y="184" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="453" y="184" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="525" y="184" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="597" y="184" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="669" y="184" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="741" y="184" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="813" y="184" width="66" height="24" rx="4" fill="#6b46c1" />
+<text x="846" y="201" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<rect x="885" y="184" width="66" height="24" rx="4" fill="#6b46c1" />
+<text x="918" y="201" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<text x="30" y="239" font-size="13.5" font-weight="700" text-anchor="start" fill="#1f2937">Equal priorities (all 2): round-robin - every channel gets every 4th burst</text>
+<text x="268" y="259" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 1</text>
+<text x="340" y="259" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 2</text>
+<text x="412" y="259" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 3</text>
+<text x="484" y="259" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 4</text>
+<text x="556" y="259" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 5</text>
+<text x="628" y="259" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 6</text>
+<text x="700" y="259" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 7</text>
+<text x="772" y="259" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 8</text>
+<text x="844" y="259" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 9</text>
+<text x="916" y="259" font-size="10.5" font-weight="400" text-anchor="middle" fill="#5b6472">burst 10</text>
+<text x="30" y="285" font-size="12" font-weight="400" text-anchor="start" fill="#1f2937">CH0 camera (P2)</text>
+<rect x="237" y="269" width="66" height="24" rx="4" fill="#c05621" />
+<text x="270" y="286" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<rect x="309" y="269" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="381" y="269" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="453" y="269" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="525" y="269" width="66" height="24" rx="4" fill="#c05621" />
+<text x="558" y="286" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<rect x="597" y="269" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="669" y="269" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="741" y="269" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="813" y="269" width="66" height="24" rx="4" fill="#c05621" />
+<text x="846" y="286" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<rect x="885" y="269" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<text x="30" y="315" font-size="12" font-weight="400" text-anchor="start" fill="#1f2937">CH1 radar (P2)</text>
+<rect x="237" y="299" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="309" y="299" width="66" height="24" rx="4" fill="#c53030" />
+<text x="342" y="316" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<rect x="381" y="299" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="453" y="299" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="525" y="299" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="597" y="299" width="66" height="24" rx="4" fill="#c53030" />
+<text x="630" y="316" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<rect x="669" y="299" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="741" y="299" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="813" y="299" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="885" y="299" width="66" height="24" rx="4" fill="#c53030" />
+<text x="918" y="316" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<text x="30" y="345" font-size="12" font-weight="400" text-anchor="start" fill="#1f2937">CH2 LiDAR (P2)</text>
+<rect x="237" y="329" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="309" y="329" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="381" y="329" width="66" height="24" rx="4" fill="#2c7a7b" />
+<text x="414" y="346" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<rect x="453" y="329" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="525" y="329" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="597" y="329" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="669" y="329" width="66" height="24" rx="4" fill="#2c7a7b" />
+<text x="702" y="346" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<rect x="741" y="329" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="813" y="329" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="885" y="329" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<text x="30" y="375" font-size="12" font-weight="400" text-anchor="start" fill="#1f2937">CH3 diag (P2)</text>
+<rect x="237" y="359" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="309" y="359" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="381" y="359" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="453" y="359" width="66" height="24" rx="4" fill="#6b46c1" />
+<text x="486" y="376" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<rect x="525" y="359" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="597" y="359" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="669" y="359" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="741" y="359" width="66" height="24" rx="4" fill="#6b46c1" />
+<text x="774" y="376" font-size="10.5" font-weight="700" text-anchor="middle" fill="#fff">GRANT</text>
+<rect x="813" y="359" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<rect x="885" y="359" width="66" height="24" rx="4" fill="#f4f5f7" stroke="#e1e4e8"/>
+<text x="30" y="403" font-size="12" font-weight="400" text-anchor="start" fill="#5b6472" font-style="italic">Top: radar (2 bursts) is served first, then LiDAR (3), camera (3), diagnostics (2). Bottom: equal channels take turns.</text></svg>

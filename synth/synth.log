@@ -1,0 +1,310 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Oct 21 10:25:35 2026
+# Process ID         : 11236
+# Current directory  : C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/synth
+# Command line       : vivado.exe -mode batch -source synth.tcl -nojournal -log synth.log
+# Log file           : C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/synth/synth.log
+# Journal file       : 
+# Running On         : Shashank
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26300
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16852 MB
+# Swap memory        : 2550 MB
+# Total Virtual      : 19402 MB
+# Available Virtual  : 8296 MB
+#-----------------------------------------------------------
+source synth.tcl
+# set part  xc7a100tcsg324-1
+# set rtl   [file normalize ../rtl]
+# read_verilog -sv [list $rtl/dma_pkg.sv $rtl/dma_sfifo.sv $rtl/dma_channel.sv $rtl/dma_arbiter.sv $rtl/dma_engine.sv $rtl/dma_top.sv]
+read_verilog: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 535.879 ; gain = 219.082
+# synth_design -top dma_top -part $part -mode out_of_context
+Command: synth_design -top dma_top -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13032
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1077.098 ; gain = 536.238
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11067] parameter 'N_CH' declared inside package 'dma_pkg' shall be treated as localparam [C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/rtl/dma_pkg.sv:8]
+WARNING: [Synth 8-11067] parameter 'DATA_W' declared inside package 'dma_pkg' shall be treated as localparam [C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/rtl/dma_pkg.sv:9]
+WARNING: [Synth 8-11067] parameter 'ADDR_W' declared inside package 'dma_pkg' shall be treated as localparam [C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/rtl/dma_pkg.sv:10]
+WARNING: [Synth 8-11067] parameter 'MAX_BEATS' declared inside package 'dma_pkg' shall be treated as localparam [C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/rtl/dma_pkg.sv:11]
+WARNING: [Synth 8-11067] parameter 'FIFO_DEPTH' declared inside package 'dma_pkg' shall be treated as localparam [C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/rtl/dma_pkg.sv:12]
+WARNING: [Synth 8-11067] parameter 'LEN_W' declared inside package 'dma_pkg' shall be treated as localparam [C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/rtl/dma_pkg.sv:13]
+WARNING: [Synth 8-11067] parameter 'VERSION' declared inside package 'dma_pkg' shall be treated as localparam [C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/rtl/dma_pkg.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'dma_top' [C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/rtl/dma_top.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'dma_channel' [C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/rtl/dma_channel.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'dma_sfifo' [C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/rtl/dma_sfifo.sv:2]
+	Parameter W bound to: 32'sb00000000000000000000000000100000 
+	Parameter DEPTH bound to: 32'sb00000000000000000000000000100000 
+INFO: [Synth 8-6155] done synthesizing module 'dma_sfifo' (0#1) [C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/rtl/dma_sfifo.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'dma_channel' (0#1) [C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/rtl/dma_channel.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'dma_arbiter' [C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/rtl/dma_arbiter.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'dma_arbiter' (0#1) [C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/rtl/dma_arbiter.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'dma_engine' [C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/rtl/dma_engine.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'dma_engine' (0#1) [C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/rtl/dma_engine.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'dma_top' (0#1) [C:/Users/bedre/Desktop/LNT_ADAS_DMA_Subsystem/ADAS_DMA_Subsystem/rtl/dma_top.sv:9]
+WARNING: [Synth 8-3917] design dma_top has port pready driven by constant 1
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1200.914 ; gain = 660.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1200.914 ; gain = 660.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1200.914 ; gain = 660.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1200.914 ; gain = 660.055
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 1     
+	   4 Input    6 Bit       Adders := 4     
+	   2 Input    5 Bit       Adders := 14    
+	   2 Input    2 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 10    
+	               24 Bit    Registers := 8     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 9     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 14    
+	                1 Bit    Registers := 17    
++---RAMs : 
+	             1024 Bit	(32 X 32 bit)          RAMs := 4     
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 36    
+	   2 Input    5 Bit        Muxes := 12    
+	   4 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 8     
+	   9 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 15    
+	   4 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 68    
+	   6 Input    1 Bit        Muxes := 20    
+	   9 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design dma_top has port pready driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:01:18 . Memory (MB): peak = 1471.414 ; gain = 930.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-------------+----------------+-----------+----------------------+----------------+
+|Module Name  | RTL Object     | Inference | Size (Depth x Width) | Primitives     | 
++-------------+----------------+-----------+----------------------+----------------+
+|dma_channel: | u_fifo/mem_reg | Implied   | 32 x 32              | RAM32M x 6     | 
+|dma_channel: | u_fifo/mem_reg | Implied   | 32 x 32              | RAM32M x 6     | 
+|dma_channel: | u_fifo/mem_reg | Implied   | 32 x 32              | RAM32M x 6     | 
+|dma_channel: | u_fifo/mem_reg | Implied   | 32 x 32              | RAM32M x 6     | 
+|u_eng        | bbuf_reg       | Implied   | 16 x 32              | RAM16X1S x 32  | 
++-------------+----------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:22 . Memory (MB): peak = 1471.414 ; gain = 930.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-------------+----------------+-----------+----------------------+----------------+
+|Module Name  | RTL Object     | Inference | Size (Depth x Width) | Primitives     | 
++-------------+----------------+-----------+----------------------+----------------+
+|dma_channel: | u_fifo/mem_reg | Implied   | 32 x 32              | RAM32M x 6     | 
+|dma_channel: | u_fifo/mem_reg | Implied   | 32 x 32              | RAM32M x 6     | 
+|dma_channel: | u_fifo/mem_reg | Implied   | 32 x 32              | RAM32M x 6     | 
+|dma_channel: | u_fifo/mem_reg | Implied   | 32 x 32              | RAM32M x 6     | 
+|u_eng        | bbuf_reg       | Implied   | 16 x 32              | RAM16X1S x 32  | 
++-------------+----------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:01:28 . Memory (MB): peak = 1471.414 ; gain = 930.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:41 . Memory (MB): peak = 1657.383 ; gain = 1116.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:41 . Memory (MB): peak = 1657.383 ; gain = 1116.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:41 . Memory (MB): peak = 1657.383 ; gain = 1116.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:41 . Memory (MB): peak = 1657.383 ; gain = 1116.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:41 . Memory (MB): peak = 1657.383 ; gain = 1116.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:41 . Memory (MB): peak = 1657.383 ; gain = 1116.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   136|
+|2     |LUT1     |    10|
+|3     |LUT2     |   192|
+|4     |LUT3     |   407|
+|5     |LUT4     |   185|
+|6     |LUT5     |   166|
+|7     |LUT6     |   689|
+|8     |MUXF7    |     2|
+|9     |RAM16X1S |    32|
+|10    |RAM32M   |    20|
+|11    |RAM32X1D |     8|
+|12    |FDCE     |  1061|
+|13    |FDPE     |     4|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------------+--------------+------+
+|      |Instance         |Module        |Cells |
++------+-----------------+--------------+------+
+|1     |top              |              |  2912|
+|2     |  \g_ch[0].u_ch  |dma_channel   |   550|
+|3     |    u_fifo       |dma_sfifo_5   |    89|
+|4     |  \g_ch[1].u_ch  |dma_channel_0 |   570|
+|5     |    u_fifo       |dma_sfifo_4   |    84|
+|6     |  \g_ch[2].u_ch  |dma_channel_1 |   560|
+|7     |    u_fifo       |dma_sfifo_3   |    89|
+|8     |  \g_ch[3].u_ch  |dma_channel_2 |   553|
+|9     |    u_fifo       |dma_sfifo     |    86|
+|10    |  u_arb          |dma_arbiter   |    26|
+|11    |  u_eng          |dma_engine    |   649|
++------+-----------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:41 . Memory (MB): peak = 1657.383 ; gain = 1116.523
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:01:41 . Memory (MB): peak = 1657.383 ; gain = 1116.523
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:41 . Memory (MB): peak = 1657.383 ; gain = 1116.523
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1671.457 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 198 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1783.285 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 60 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 32 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 20 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 8 instances
+
+Synth Design complete | Checksum: 73c6c98c
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:47 . Memory (MB): peak = 1783.285 ; gain = 1247.406
+# create_clock -name clk -period 10.0 [get_ports clk]
+# report_utilization    -file utilization_synth.rpt
+# report_timing_summary -file timing_synth.rpt -max_paths 5
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1783.285 ; gain = 0.000
+# puts "SYNTHESIS DONE"
+SYNTHESIS DONE
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 21 10:27:56 2026...

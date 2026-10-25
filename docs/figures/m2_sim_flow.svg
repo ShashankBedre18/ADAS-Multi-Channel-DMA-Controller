@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="1000" height="260" font-family="Segoe UI, Arial, sans-serif"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs><rect width="1000" height="260" fill="#ffffff"/>
+<text x="500.0" y="26" font-size="17" font-weight="700" text-anchor="middle" fill="#1f2937">RTL simulation and regression flow (Vivado 2025.2 xsim)</text>
+<rect x="20" y="80" width="140" height="70" rx="8" fill="#e8f0fb" stroke="#2f5d9a" stroke-width="1.6"/>
+<text x="90.0" y="111.05" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2937">xvlog -sv</text>
+<text x="90.0" y="128.05" font-size="12" font-weight="400" text-anchor="middle" fill="#1f2937">compile RTL + UVM TB</text>
+<rect x="185" y="80" width="140" height="70" rx="8" fill="#e8f0fb" stroke="#2f5d9a" stroke-width="1.6"/>
+<text x="255.0" y="111.05" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2937">xelab</text>
+<text x="255.0" y="128.05" font-size="12" font-weight="400" text-anchor="middle" fill="#1f2937">elaborate, code-cov on</text>
+<polyline points="160,115 185,115" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="350" y="80" width="140" height="70" rx="8" fill="#e7f6ec" stroke="#2f855a" stroke-width="1.6"/>
+<text x="420.0" y="111.05" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2937">xsim x 13</text>
+<text x="420.0" y="128.05" font-size="12" font-weight="400" text-anchor="middle" fill="#1f2937">8 tests + 5 seeds</text>
+<polyline points="325,115 350,115" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="515" y="80" width="140" height="70" rx="8" fill="#f1f3f5" stroke="#6b7280" stroke-width="1.6"/>
+<text x="585.0" y="111.05" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2937">logs/*.log</text>
+<text x="585.0" y="128.05" font-size="12" font-weight="400" text-anchor="middle" fill="#1f2937">PASS / FAIL, UVM report</text>
+<polyline points="490,115 515,115" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="680" y="80" width="140" height="70" rx="8" fill="#fdf0e2" stroke="#c05621" stroke-width="1.6"/>
+<text x="750.0" y="111.05" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2937">xcrg</text>
+<text x="750.0" y="128.05" font-size="12" font-weight="400" text-anchor="middle" fill="#1f2937">merge coverage DBs</text>
+<polyline points="655,115 680,115" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="845" y="80" width="140" height="70" rx="8" fill="#f1ecfb" stroke="#6b46c1" stroke-width="1.6"/>
+<text x="915.0" y="111.05" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2937">HTML reports</text>
+<text x="915.0" y="128.05" font-size="12" font-weight="400" text-anchor="middle" fill="#1f2937">functional + code</text>
+<polyline points="820,115 845,115" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="20" y="200" font-size="13" font-weight="400" text-anchor="start" fill="#1f2937">One command:  sim\regress.bat  (Windows)  or  sim/regress.sh  (Git Bash)</text>
+<text x="20" y="225" font-size="12" font-weight="400" text-anchor="start" fill="#5b6472" font-style="italic">Single test with waveform:  xsim tb_snap -testplusarg UVM_TESTNAME=dma_smoke_test -testplusarg WAVES -R</text></svg>

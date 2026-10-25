@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 535" width="1000" height="535" font-family="Segoe UI, Arial, sans-serif"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs><rect width="1000" height="535" fill="#ffffff"/>
+<text x="500.0" y="26" font-size="17" font-weight="700" text-anchor="middle" fill="#1f2937">Transfer state machine (dma_engine) - one burst per pass</text>
+<circle cx="90" cy="260" r="46" fill="#f1f3f5" stroke="#6b7280" stroke-width="2"/>
+<text x="90" y="265" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2937">IDLE</text>
+<circle cx="240" cy="260" r="46" fill="#fdf8e1" stroke="#b7791f" stroke-width="2"/>
+<text x="240" y="265" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2937">LATCH</text>
+<circle cx="400" cy="130" r="46" fill="#f1ecfb" stroke="#6b46c1" stroke-width="2"/>
+<text x="400" y="135" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2937">RD_AR</text>
+<circle cx="580" cy="130" r="46" fill="#f1ecfb" stroke="#6b46c1" stroke-width="2"/>
+<text x="580" y="135" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2937">RD_DATA</text>
+<circle cx="490" cy="400" r="46" fill="#e6f5f5" stroke="#2c7a7b" stroke-width="2"/>
+<text x="490" y="405" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2937">STR_RD</text>
+<circle cx="740" cy="260" r="46" fill="#e7f6ec" stroke="#2f855a" stroke-width="2"/>
+<text x="740" y="265" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2937">WR_AW</text>
+<circle cx="880" cy="140" r="46" fill="#e7f6ec" stroke="#2f855a" stroke-width="2"/>
+<text x="880" y="145" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2937">WR_W</text>
+<circle cx="880" cy="400" r="46" fill="#e7f6ec" stroke="#2f855a" stroke-width="2"/>
+<text x="880" y="405" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2937">WR_B</text>
+<circle cx="690" cy="470" r="46" fill="#fdf0e2" stroke="#c05621" stroke-width="2"/>
+<text x="690" y="475" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2937">UPD</text>
+<circle cx="300" cy="450" r="46" fill="#fdf0e2" stroke="#c05621" stroke-width="2"/>
+<text x="300" y="455" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2937">SETTLE</text>
+<polyline points="136.0,260.0 192.0,260.0" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="165.0" y="252.0" font-size="11" font-weight="400" text-anchor="middle" fill="#5b6472">gnt_valid</text>
+<polyline points="275.7012440053482,230.99273924565458 362.74652799441924,160.26844600453435" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="280.0" y="195.0" font-size="11" font-weight="400" text-anchor="middle" fill="#5b6472">memory src</text>
+<polyline points="280.13527673368714,282.4757549708648 448.11971123441344,376.5470382912715" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="315.0" y="340.0" font-size="11" font-weight="400" text-anchor="middle" fill="#5b6472">sensor src</text>
+<polyline points="446.0,130.0 532.0,130.0" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="490.0" y="122.0" font-size="11" font-weight="400" text-anchor="middle" fill="#5b6472">arready</text>
+<polyline points="615.7012440053483,159.00726075434542 702.7465279944192,229.73155399546565" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="715.0" y="195.0" font-size="11" font-weight="400" text-anchor="middle" fill="#5b6472">rlast, OKAY</text>
+<polyline points="530.1352767336871,377.5242450291352 698.1197112344134,283.4529617087285" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="605.0" y="362.0" font-size="11" font-weight="400" text-anchor="middle" fill="#5b6472">beats popped</text>
+<polyline points="774.9258037088036,230.06359682102544 843.5556830864657,171.23798592588648" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="785.0" y="195.0" font-size="11" font-weight="400" text-anchor="middle" fill="#5b6472">awready</text>
+<polyline points="880.0,186.0 880.0,352.0" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="935.0" y="270.0" font-size="11" font-weight="400" text-anchor="middle" fill="#5b6472">wready &amp; wlast</text>
+<polyline points="836.8362166264129,415.90244650605837 735.0404696072213,453.4061427762869" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="805.0" y="425.0" font-size="11" font-weight="400" text-anchor="middle" fill="#5b6472">bvalid</text>
+<polyline points="644.0603674800769,467.6441214092347 347.93700784687627,452.4583080947116" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="495.0" y="460.0" font-size="11" font-weight="400" text-anchor="middle" fill="#5b6472"></text>
+<polyline points="265.88935416030654,419.1379870974202 125.59371739794102,292.20383955051807" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="195.0" y="355.0" font-size="11" font-weight="400" text-anchor="middle" fill="#5b6472"></text>
+<path d="M 620 170 C 680 300, 700 360, 700 422" fill="none" stroke="#c53030" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+<text x="612" y="296" font-size="11" font-weight="400" text-anchor="end" fill="#c53030">read error: skip the write</text>
+<text x="20" y="62" font-size="12" font-weight="400" text-anchor="start" fill="#c53030" font-style="italic">Any non-OKAY response is stored in err and reported to the channel in UPD</text>
+<text x="20" y="525" font-size="12" font-weight="400" text-anchor="start" fill="#5b6472" font-style="italic">LATCH and SETTLE are one-cycle states added to meet 100 MHz timing (registered request).</text></svg>

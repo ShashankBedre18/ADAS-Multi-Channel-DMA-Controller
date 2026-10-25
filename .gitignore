@@ -1,0 +1,17 @@
+# Vivado / xsim generated files
+sim/work/
+sim/cov/
+sim/merged/
+*.wdb
+*.jou
+*.pb
+.Xil/
+xsim.dir/
+
+# Vivado GUI project (re-create with scripts/create_vivado_project.tcl)
+adas_dma/
+vivado_proj/
+
+# Python cache and Word lock files
+__pycache__/
+~$*.docx

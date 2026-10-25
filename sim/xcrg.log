@@ -1,0 +1,26 @@
+
+ Options Set are : 
+
+   Command Line               : xcrg -report_format html -report_dir report\code -cov_db_dir work -cov_db_name tb_snap
+   Report Format              : html
+   Log File                   : xcrg.log
+   Code Coverage Dir[s]       : work
+   Code Coverage DB[s]        : tb_snap
+
+
+********************************************************
+                  Code Coverage Report 
+********************************************************
+
+ Restoring Code Coverage DB[s] from : 
+  1	work/xsim.codeCov/tb_snap/xsim.CCInfo
+
+ Created Coverage Report Directory     : report\code/codeCoverageReport
+
+ Code Coverage HTML Report directory              : report\code/codeCoverageReport
+
+ Line Coverage Score 97.5041
+ Branch Coverage Score 57.1691
+ Condition Coverage Score 76.8692
+ Toggle Coverage Score 49.02
+

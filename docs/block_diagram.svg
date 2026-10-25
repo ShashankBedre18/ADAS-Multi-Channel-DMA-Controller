@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#334"/></marker>
+  </defs>
+  <rect width="900" height="560" fill="#fafbfc"/>
+  <text x="450" y="26" text-anchor="middle" font-size="17" font-weight="600" fill="#123">ADAS Multi-Channel DMA Subsystem (dma_top)</text>
+
+  <!-- sensors -->
+  <g fill="#e8f1ff" stroke="#2a5db0">
+    <rect x="20" y="70"  width="130" height="44" rx="6"/><rect x="20" y="130" width="130" height="44" rx="6"/>
+    <rect x="20" y="190" width="130" height="44" rx="6"/><rect x="20" y="250" width="130" height="44" rx="6"/>
+  </g>
+  <g text-anchor="middle" fill="#123">
+    <text x="85" y="97">Camera (CH0)</text><text x="85" y="157">Radar (CH1)</text>
+    <text x="85" y="217">LiDAR (CH2)</text><text x="85" y="277">Diag / memory (CH3)</text>
+  </g>
+  <text x="85" y="58" text-anchor="middle" fill="#456">sensor streams (valid/ready)</text>
+
+  <!-- channels -->
+  <g fill="#fff4e0" stroke="#b36b00">
+    <rect x="200" y="70"  width="190" height="44" rx="6"/><rect x="200" y="130" width="190" height="44" rx="6"/>
+    <rect x="200" y="190" width="190" height="44" rx="6"/><rect x="200" y="250" width="190" height="44" rx="6"/>
+  </g>
+  <g text-anchor="middle" fill="#123" font-size="12">
+    <text x="295" y="89">dma_channel 0</text><text x="295" y="105" fill="#654">regs + 32-word FIFO + context</text>
+    <text x="295" y="149">dma_channel 1</text><text x="295" y="165" fill="#654">regs + 32-word FIFO + context</text>
+    <text x="295" y="209">dma_channel 2</text><text x="295" y="225" fill="#654">regs + 32-word FIFO + context</text>
+    <text x="295" y="269">dma_channel 3</text><text x="295" y="285" fill="#654">regs + 32-word FIFO + context</text>
+  </g>
+  <g stroke="#334" stroke-width="1.4" marker-end="url(#a)" fill="none">
+    <path d="M150 92H200"/><path d="M150 152H200"/><path d="M150 212H200"/><path d="M150 272H200"/>
+  </g>
+
+  <!-- arbiter -->
+  <rect x="450" y="70" width="170" height="110" rx="8" fill="#eaf7ea" stroke="#2b7a2b"/>
+  <text x="535" y="94" text-anchor="middle" font-weight="600" fill="#123">dma_arbiter</text>
+  <g text-anchor="middle" font-size="12" fill="#243">
+    <text x="535" y="116">priority 0..3 (3 = radar)</text><text x="535" y="133">+ round-robin between equals</text>
+    <text x="535" y="150"></text><text x="535" y="167">one decision per burst</text>
+  </g>
+  <g stroke="#334" stroke-width="1.4" marker-end="url(#a)" fill="none">
+    <path d="M390 92H420V105H450"/><path d="M390 152H420V140H450"/><path d="M390 212H430V160H450"/><path d="M390 272H440V170H450"/>
+  </g>
+  <text x="420" y="64" text-anchor="middle" font-size="11" fill="#456">req / prio</text>
+
+  <!-- engine -->
+  <rect x="450" y="230" width="300" height="150" rx="8" fill="#f3ecff" stroke="#6a3db8"/>
+  <text x="600" y="254" text-anchor="middle" font-weight="600" fill="#123">dma_engine (burst FSM + AXI4 master)</text>
+  <text x="600" y="276" text-anchor="middle" font-size="12" fill="#324">IDLE → LATCH → RD_AR/RD_DATA | STR_RD</text>
+  <text x="600" y="294" text-anchor="middle" font-size="12" fill="#324">→ WR_AW → WR_W → WR_B → UPD → SETTLE</text>
+  <rect x="470" y="310" width="120" height="40" rx="5" fill="#fff" stroke="#6a3db8"/><text x="530" y="334" text-anchor="middle" font-size="12">16-word burst buffer</text>
+  <rect x="610" y="310" width="120" height="40" rx="5" fill="#fff" stroke="#6a3db8"/><text x="670" y="334" text-anchor="middle" font-size="12">SLVERR / DECERR capture</text>
+  <g stroke="#334" stroke-width="1.4" marker-end="url(#a)" fill="none">
+    <path d="M535 180V230"/>
+    <path d="M450 330H420V270H390" />
+  </g>
+  <text x="545" y="210" font-size="11" fill="#456">grant</text>
+  <text x="402" y="322" font-size="11" fill="#456" text-anchor="end">pop / upd</text>
+
+  <!-- APB + regs -->
+  <rect x="20" y="400" width="370" height="64" rx="8" fill="#fff" stroke="#556"/>
+  <text x="205" y="424" text-anchor="middle" font-weight="600" fill="#123">APB slave + global registers</text>
+  <text x="205" y="444" text-anchor="middle" font-size="12" fill="#345">GCTRL (enable) · GSTAT · IRQ_SUM · VERSION</text>
+  <path d="M205 400V300" stroke="#334" stroke-width="1.4" marker-end="url(#a)" fill="none" stroke-dasharray="4 3"/>
+  <text x="212" y="352" font-size="11" fill="#456">per-channel register writes</text>
+  <text x="205" y="486" text-anchor="middle" font-size="12" fill="#456">CPU / ADAS software (APB)</text>
+
+  <!-- memory -->
+  <rect x="790" y="250" width="90" height="110" rx="8" fill="#e8f1ff" stroke="#2a5db0"/>
+  <text x="835" y="300" text-anchor="middle" fill="#123">DDR /</text><text x="835" y="318" text-anchor="middle" fill="#123">on-chip</text><text x="835" y="336" text-anchor="middle" fill="#123">memory</text>
+  <path d="M750 305H790" stroke="#334" stroke-width="1.4" marker-end="url(#a)" marker-start="url(#a)" fill="none"/>
+  <text x="770" y="296" text-anchor="middle" font-size="11" fill="#456">AXI4</text>
+
+  <!-- irq -->
+  <rect x="450" y="410" width="300" height="54" rx="8" fill="#fff0f0" stroke="#b03030"/>
+  <text x="600" y="432" text-anchor="middle" font-weight="600" fill="#123">Interrupts</text>
+  <text x="600" y="450" text-anchor="middle" font-size="12" fill="#533">irq_ch[3:0] = DONE | ERR   ·   irq = OR</text>
+
+  <text x="450" y="530" text-anchor="middle" font-size="12" fill="#456">Verification: UVM env (APB agent, 4 sensor agents, AXI memory-slave agent, scoreboard, coverage) + bound SVA</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" width="1000" height="330" font-family="Segoe UI, Arial, sans-serif"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs><rect width="1000" height="330" fill="#ffffff"/>
+<text x="500.0" y="26" font-size="17" font-weight="700" text-anchor="middle" fill="#1f2937">Bit fields of the most important channel registers</text>
+<text x="20" y="100" font-size="14" font-weight="700" text-anchor="start" fill="#1f2937">CTRL</text>
+<rect x="120.0" y="70" width="531.2" height="44" fill="#f1f3f5" stroke="#6b7280" stroke-width="1.2"/>
+<text x="385.625" y="65" font-size="10" font-weight="400" text-anchor="middle" fill="#5b6472">31:12</text>
+<text x="385.625" y="97" font-size="11" font-weight="700" text-anchor="middle" fill="#1f2937">reserved</text>
+<rect x="651.2" y="70" width="106.2" height="44" fill="#f1ecfb" stroke="#6b46c1" stroke-width="1.2"/>
+<text x="704.375" y="65" font-size="10" font-weight="400" text-anchor="middle" fill="#5b6472">11:8</text>
+<text x="704.375" y="97" font-size="11" font-weight="700" text-anchor="middle" fill="#1f2937">BLEN</text>
+<rect x="757.5" y="70" width="53.1" height="44" fill="#f1f3f5" stroke="#6b7280" stroke-width="1.2"/>
+<text x="784.0625" y="65" font-size="10" font-weight="400" text-anchor="middle" fill="#5b6472">7:6</text>
+<text x="784.0625" y="97" font-size="9.5" font-weight="700" text-anchor="middle" fill="#1f2937">rsvd</text>
+<rect x="810.6" y="70" width="53.1" height="44" fill="#fdf0e2" stroke="#c05621" stroke-width="1.2"/>
+<text x="837.1875" y="65" font-size="10" font-weight="400" text-anchor="middle" fill="#5b6472">5:4</text>
+<text x="837.1875" y="97" font-size="9.5" font-weight="700" text-anchor="middle" fill="#1f2937">PRIO</text>
+<rect x="863.8" y="70" width="26.6" height="44" fill="#f1f3f5" stroke="#6b7280" stroke-width="1.2"/>
+<text x="877.03125" y="65" font-size="10" font-weight="400" text-anchor="middle" fill="#5b6472">3</text>
+<text x="881.0" y="110" font-size="9.5" font-weight="700" fill="#1f2937" transform="rotate(-90 881.0 110)">rsvd</text>
+<rect x="890.3" y="70" width="26.6" height="44" fill="#e6f5f5" stroke="#2c7a7b" stroke-width="1.2"/>
+<text x="903.59375" y="65" font-size="10" font-weight="400" text-anchor="middle" fill="#5b6472">2</text>
+<text x="907.6" y="110" font-size="9.5" font-weight="700" fill="#1f2937" transform="rotate(-90 907.6 110)">STRM</text>
+<rect x="916.9" y="70" width="26.6" height="44" fill="#e7f6ec" stroke="#2f855a" stroke-width="1.2"/>
+<text x="930.15625" y="65" font-size="10" font-weight="400" text-anchor="middle" fill="#5b6472">1</text>
+<text x="934.2" y="110" font-size="9.5" font-weight="700" fill="#1f2937" transform="rotate(-90 934.2 110)">START</text>
+<rect x="943.4" y="70" width="26.6" height="44" fill="#e8f0fb" stroke="#2f5d9a" stroke-width="1.2"/>
+<text x="956.71875" y="65" font-size="10" font-weight="400" text-anchor="middle" fill="#5b6472">0</text>
+<text x="960.7" y="110" font-size="9.5" font-weight="700" fill="#1f2937" transform="rotate(-90 960.7 110)">EN</text>
+<text x="20" y="195" font-size="14" font-weight="700" text-anchor="start" fill="#1f2937">STATUS</text>
+<rect x="120.0" y="165" width="478.1" height="44" fill="#f1f3f5" stroke="#6b7280" stroke-width="1.2"/>
+<text x="359.0625" y="160" font-size="10" font-weight="400" text-anchor="middle" fill="#5b6472">31:14</text>
+<text x="359.0625" y="192" font-size="11" font-weight="700" text-anchor="middle" fill="#1f2937">reserved</text>
+<rect x="598.1" y="165" width="159.4" height="44" fill="#e6f5f5" stroke="#2c7a7b" stroke-width="1.2"/>
+<text x="677.8125" y="160" font-size="10" font-weight="400" text-anchor="middle" fill="#5b6472">13:8</text>
+<text x="677.8125" y="192" font-size="11" font-weight="700" text-anchor="middle" fill="#1f2937">FIFO_LEVEL</text>
+<rect x="757.5" y="165" width="79.7" height="44" fill="#f1f3f5" stroke="#6b7280" stroke-width="1.2"/>
+<text x="797.34375" y="160" font-size="10" font-weight="400" text-anchor="middle" fill="#5b6472">7:5</text>
+<text x="797.34375" y="192" font-size="11" font-weight="700" text-anchor="middle" fill="#1f2937">rsvd</text>
+<rect x="837.2" y="165" width="79.7" height="44" fill="#fdecec" stroke="#c53030" stroke-width="1.2"/>
+<text x="877.03125" y="160" font-size="10" font-weight="400" text-anchor="middle" fill="#5b6472">4:2</text>
+<text x="877.03125" y="192" font-size="11" font-weight="700" text-anchor="middle" fill="#1f2937">ERR_CODE</text>
+<rect x="916.9" y="165" width="26.6" height="44" fill="#fdf0e2" stroke="#c05621" stroke-width="1.2"/>
+<text x="930.15625" y="160" font-size="10" font-weight="400" text-anchor="middle" fill="#5b6472">1</text>
+<text x="934.2" y="205" font-size="9.5" font-weight="700" fill="#1f2937" transform="rotate(-90 934.2 205)">INFL</text>
+<rect x="943.4" y="165" width="26.6" height="44" fill="#e7f6ec" stroke="#2f855a" stroke-width="1.2"/>
+<text x="956.71875" y="160" font-size="10" font-weight="400" text-anchor="middle" fill="#5b6472">0</text>
+<text x="960.7" y="205" font-size="9.5" font-weight="700" fill="#1f2937" transform="rotate(-90 960.7 205)">ACT</text>
+<text x="20" y="285" font-size="14" font-weight="700" text-anchor="start" fill="#1f2937">INT_STAT</text>
+<rect x="120.0" y="255" width="796.9" height="44" fill="#f1f3f5" stroke="#6b7280" stroke-width="1.2"/>
+<text x="518.4375" y="250" font-size="10" font-weight="400" text-anchor="middle" fill="#5b6472">31:2</text>
+<text x="518.4375" y="282" font-size="11" font-weight="700" text-anchor="middle" fill="#1f2937">reserved</text>
+<rect x="916.9" y="255" width="26.6" height="44" fill="#fdecec" stroke="#c53030" stroke-width="1.2"/>
+<text x="930.15625" y="250" font-size="10" font-weight="400" text-anchor="middle" fill="#5b6472">1</text>
+<text x="934.2" y="295" font-size="9.5" font-weight="700" fill="#1f2937" transform="rotate(-90 934.2 295)">ERR</text>
+<rect x="943.4" y="255" width="26.6" height="44" fill="#e7f6ec" stroke="#2f855a" stroke-width="1.2"/>
+<text x="956.71875" y="250" font-size="10" font-weight="400" text-anchor="middle" fill="#5b6472">0</text>
+<text x="960.7" y="295" font-size="9.5" font-weight="700" fill="#1f2937" transform="rotate(-90 960.7 295)">DONE</text>
+<text x="120" y="318" font-size="11.5" font-weight="400" text-anchor="start" fill="#5b6472" font-style="italic">BLEN = beats-1 (0..15 = 1..16-beat bursts)  |  PRIO 3 = most critical  |  ERR_CODE: 0 none, 1 SLVERR, 2 DECERR, 3 bad config</text></svg>
